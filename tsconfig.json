@@ -23,9 +23,16 @@
       "@/*": ["app/*"],
       "@/components/*": ["components/*"],
       "@/types/*": ["types/*"],
-      "@/redux/*": ["redux/*"]
+      "@/redux/*": ["redux/*"],
+      "@/style/*": ["style/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "redux/providers.js"
+  ],
   "exclude": ["node_modules"]
 }
