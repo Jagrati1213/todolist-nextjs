@@ -1,8 +1,8 @@
-import Providers from "@/redux/providers";
+import { ReduxProvider } from "@/redux/provider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-
 const inter = Inter({ subsets: ["latin"] });
+import "./globals.scss";
 
 export const metadata: Metadata = {
   title: "TODO App",
@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Providers>{children}</Providers>
+        <ReduxProvider>{children}</ReduxProvider>
       </body>
     </html>
   );
