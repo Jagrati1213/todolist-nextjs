@@ -1,9 +1,9 @@
 @use "./style";
-@import "/app/style/module/variables";
+@import "/style/module/variables";
 body {
   width: 100%;
   overflow: hidden;
-  padding: 2.5rem;
-  background-color: $lavender;
-  color: $white;
+  padding: 0 0 2.5rem 0;
+  margin: 0;
+  background-color: $white;
 }
