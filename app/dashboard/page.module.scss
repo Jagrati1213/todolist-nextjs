@@ -9,5 +9,38 @@
   flex: 1;
 }
 .dashboard {
-  width: 100%;
+  width: calc(100% - 4.4rem);
+  padding: 0 0 0 2.4rem;
+}
+
+.input_box {
+  box-shadow: -5px -5px 9px #edededeb, 5px 5px 9px rgb(94 104 121 / 28%);
+  background: $white;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  :global(.ant-input) {
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    &:is(:hover) {
+      box-shadow: none;
+      border: none;
+    }
+    &::placeholder {
+      color: $dark_gray;
+    }
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: end;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.taskList {
+  margin-top: $space-xs;
+  width: 98%;
 }
