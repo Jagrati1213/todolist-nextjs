@@ -7,7 +7,7 @@ import {
   DeleteOutlined,
 } from "@ant-design/icons";
 import type { MenuProps } from "antd";
-import { Menu } from "antd";
+import { Col, Menu } from "antd";
 type MenuItem = Required<MenuProps>["items"][number];
 
 function getItem(
@@ -34,10 +34,10 @@ const items: MenuItem[] = [
 
 function SideMenu({ collapsed }: { collapsed: boolean }) {
   return (
-    <div className={style.sideMenu}>
+    <Col className={style.sideMenu}>
       <Menu
-        defaultSelectedKeys={["1"]}
-        defaultOpenKeys={["sub1"]}
+        defaultSelectedKeys={["notes"]}
+        defaultOpenKeys={["notes"]}
         mode="inline"
         theme="light"
         inlineCollapsed={collapsed}
@@ -46,7 +46,7 @@ function SideMenu({ collapsed }: { collapsed: boolean }) {
           console.log(key);
         }}
       />
-    </div>
+    </Col>
   );
 }
 
