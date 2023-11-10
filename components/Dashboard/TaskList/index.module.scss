@@ -1,0 +1,7 @@
+@import "/style/module/variables";
+
+.lists {
+  :global(.ant-row) {
+    flex-wrap: wrap;
+  }
+}
