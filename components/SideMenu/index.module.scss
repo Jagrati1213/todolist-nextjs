@@ -2,12 +2,12 @@
 
 .sideMenu {
   background-color: $white;
-  min-height: 100vh;
-  padding-top: $space-xs;
 
   // open menu
   :global(.ant-menu-inline) {
+    padding-top: $space-xs;
     padding-right: $space-xs;
+    min-height: 100vh;
     font-weight: 500;
 
     :global(.ant-menu-item-selected) {
@@ -20,7 +20,7 @@
     }
     :global(.ant-menu-item) {
       height: 3rem;
-      width: calc(100% - -29px);
+      width: calc(100% - -22px);
       padding-right: 4rem;
       border-start-end-radius: 2rem;
       border-end-end-radius: 2rem;
@@ -29,6 +29,10 @@
 
   // close menu
   :global(.ant-menu-inline-collapsed) {
+    padding-top: $space-xs;
+    min-height: 100vh;
+    font-weight: 500;
+
     :global(.ant-menu-item-selected) {
       border-radius: 8px;
     }
