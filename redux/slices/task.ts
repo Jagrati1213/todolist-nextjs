@@ -1,11 +1,17 @@
-import { TasksProps } from "@/types/taskProps";
+import { TasksProps } from "types/taskProps";
 import { createSlice } from "@reduxjs/toolkit";
 
 interface propsType {
   task: TasksProps[] | null;
 }
 const initialState: propsType = {
-  task: null,
+  task: [
+    {
+      title: "task 1",
+      description: "task 1",
+      status: false,
+    },
+  ],
 };
 const taskSlice = createSlice({
   name: "tasks",
