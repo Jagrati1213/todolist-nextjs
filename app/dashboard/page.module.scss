@@ -1,0 +1,13 @@
+@import "/style/module/variables";
+
+.main {
+  display: flex;
+  flex: auto;
+}
+.task_container {
+  padding-top: $space-md;
+  flex: 1;
+}
+.dashboard {
+  width: 100%;
+}
