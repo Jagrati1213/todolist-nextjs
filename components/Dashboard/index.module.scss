@@ -1,0 +1,8 @@
+@import "/style/module/variables";
+.fixed_header {
+  position: fixed;
+  top: 0;
+  z-index: 111;
+  width: 100%;
+  background-color: $white;
+}
